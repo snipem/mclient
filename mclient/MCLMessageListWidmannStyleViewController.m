@@ -58,11 +58,11 @@
 
     self.veryLightGreyColor = [UIColor colorWithRed:240/255.0f green:240/255.0f blue:240/255.0f alpha:1.0f];
 
-    NSString *identifier = [[NSBundle mainBundle] bundleIdentifier];
-    KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:identifier accessGroup:nil];
-    self.username = [keychainItem objectForKey:(__bridge id)(kSecAttrAccount)];
-    NSData *passwordData = [keychainItem objectForKey:(__bridge id)(kSecValueData)];
-    self.password = [[NSString alloc] initWithData:passwordData encoding:NSUTF8StringEncoding];
+//    NSString *identifier = [[NSBundle mainBundle] bundleIdentifier];
+//    KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:identifier accessGroup:nil];
+//    self.username = [keychainItem objectForKey:(__bridge id)(kSecAttrAccount)];
+//    NSData *passwordData = [keychainItem objectForKey:(__bridge id)(kSecValueData)];
+//    self.password = [[NSString alloc] initWithData:passwordData encoding:NSUTF8StringEncoding];
 
     self.validLogin = [[NSUserDefaults standardUserDefaults] boolForKey:@"validLogin"];
 

@@ -59,7 +59,7 @@
 {
     [super viewDidLoad];
 
-    [self showLoginStatus];
+//    [self showLoginStatus];
     [self setupRefreshControl];
 
     // Visualize loading
@@ -107,12 +107,14 @@
     [self.navigationController setToolbarHidden:NO animated:YES];
 
     // Reading username + password from keychain
-    NSString *keychainIdentifier = [[NSBundle mainBundle] bundleIdentifier];
-    KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:keychainIdentifier accessGroup:nil];
-    [keychainItem setObject:(__bridge id)(kSecAttrAccessibleWhenUnlocked) forKey:(__bridge id)(kSecAttrAccessible)];
-    NSData *passwordData = [keychainItem objectForKey:(__bridge id)(kSecValueData)];
-    NSString *password = [[NSString alloc] initWithData:passwordData encoding:NSUTF8StringEncoding];
-    NSString *username = [keychainItem objectForKey:(__bridge id)(kSecAttrAccount)];
+//    NSString *keychainIdentifier = [[NSBundle mainBundle] bundleIdentifier];
+//    KeychainItemWrapper *keychainItem = [[KeychainItemWrapper alloc] initWithIdentifier:keychainIdentifier accessGroup:nil];
+//    [keychainItem setObject:(__bridge id)(kSecAttrAccessibleWhenUnlocked) forKey:(__bridge id)(kSecAttrAccessible)];
+//    NSData *passwordData = [keychainItem objectForKey:(__bridge id)(kSecValueData)];
+//    NSString *password = [[NSString alloc] initWithData:passwordData encoding:NSUTF8StringEncoding];
+//    NSString *username = [keychainItem objectForKey:(__bridge id)(kSecAttrAccount)];
+    NSString *password = @"";
+    NSString *username = @"";
 
     if (username.length == 0 || password.length == 0) {
         [self saveValidLoginFlagToUserDefaultWithValue:NO];

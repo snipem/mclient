@@ -55,6 +55,8 @@
 		306EA6E519D598F800BB4DC8 /* MCLInternetConnectionErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 306EA6E419D598F800BB4DC8 /* MCLInternetConnectionErrorView.m */; };
 		306EA6E819D5992F00BB4DC8 /* MCLMServiceErrorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 306EA6E719D5992F00BB4DC8 /* MCLMServiceErrorView.m */; };
 		306F8C3519BA0F2C00376A58 /* quoteButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 306F8C3419BA0F2C00376A58 /* quoteButton@2x.png */; };
+		307813C91D95AA5C00FD6E8D /* MessageListWidmannStyleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 307813C81D95AA5C00FD6E8D /* MessageListWidmannStyleViewController.swift */; };
+		307813CC1D98097A00FD6E8D /* MessageListWidmannStyleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 307813CB1D98097A00FD6E8D /* MessageListWidmannStyleTableViewCell.xib */; };
 		307A80DD19B5EBD8001B538D /* MCLMServiceConnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 307A80DC19B5EBD8001B538D /* MCLMServiceConnector.m */; };
 		307A80E619B7736A001B538D /* settingsButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 307A80E519B7736A001B538D /* settingsButton@2x.png */; };
 		307A80E819B7B899001B538D /* speakButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 307A80E719B7B899001B538D /* speakButton@2x.png */; };
@@ -203,6 +205,9 @@
 		306EA6E619D5992F00BB4DC8 /* MCLMServiceErrorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLMServiceErrorView.h; sourceTree = "<group>"; };
 		306EA6E719D5992F00BB4DC8 /* MCLMServiceErrorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLMServiceErrorView.m; sourceTree = "<group>"; };
 		306F8C3419BA0F2C00376A58 /* quoteButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "quoteButton@2x.png"; sourceTree = "<group>"; };
+		307813C71D95AA5B00FD6E8D /* mclient-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "mclient-Bridging-Header.h"; sourceTree = "<group>"; };
+		307813C81D95AA5C00FD6E8D /* MessageListWidmannStyleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageListWidmannStyleViewController.swift; sourceTree = "<group>"; };
+		307813CB1D98097A00FD6E8D /* MessageListWidmannStyleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageListWidmannStyleTableViewCell.xib; sourceTree = "<group>"; };
 		307A80DB19B5EBD8001B538D /* MCLMServiceConnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCLMServiceConnector.h; sourceTree = "<group>"; };
 		307A80DC19B5EBD8001B538D /* MCLMServiceConnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCLMServiceConnector.m; sourceTree = "<group>"; };
 		307A80E519B7736A001B538D /* settingsButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settingsButton@2x.png"; sourceTree = "<group>"; };
@@ -405,12 +410,14 @@
 				301FD9AF19C83A9C00E36A5B /* MCLMessageListFrameStyleViewController.m */,
 				305DD85219AB2970006514BD /* MCLMessageListWidmannStyleViewController.h */,
 				305DD85319AB2970006514BD /* MCLMessageListWidmannStyleViewController.m */,
+				307813CA1D98092700FD6E8D /* MessageListWidmannStyleViewController */,
 				301E24B419BB02EB00943EC6 /* MCLProfileTableViewController.h */,
 				301E24B519BB02EB00943EC6 /* MCLProfileTableViewController.m */,
 				30A1BFAB19B4A8D4002439FE /* MCLSettingsTableViewController.h */,
 				30A1BFAC19B4A8D4002439FE /* MCLSettingsTableViewController.m */,
 				305DD85519AB2A7C006514BD /* MCLThreadListTableViewController.h */,
 				305DD85619AB2A7C006514BD /* MCLThreadListTableViewController.m */,
+				307813C71D95AA5B00FD6E8D /* mclient-Bridging-Header.h */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -487,6 +494,15 @@
 				301FD9AC19C5C79000E36A5B /* Reachability.m */,
 			);
 			name = Apple;
+			sourceTree = "<group>";
+		};
+		307813CA1D98092700FD6E8D /* MessageListWidmannStyleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				307813C81D95AA5C00FD6E8D /* MessageListWidmannStyleViewController.swift */,
+				307813CB1D98097A00FD6E8D /* MessageListWidmannStyleTableViewCell.xib */,
+			);
+			name = MessageListWidmannStyleViewController;
 			sourceTree = "<group>";
 		};
 		307A80DE19B75F29001B538D /* Images */ = {
@@ -608,11 +624,12 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MCL;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Christopher Reitz";
 				TargetAttributes = {
 					305DD81319A63517006514BD = {
 						DevelopmentTeam = J8XDHCNJQA;
+						LastSwiftMigration = 0800;
 					};
 					305DD83A19A63517006514BD = {
 						TestTargetID = 305DD81319A63517006514BD;
@@ -690,6 +707,7 @@
 				301E24B319BAE86200943EC6 /* notificationButtonEnabled@2x.png in Resources */,
 				30501B5719E30CF800333952 /* quoteButton.png in Resources */,
 				301E24B219BAE86200943EC6 /* notificationButtonDisabled@2x.png in Resources */,
+				307813CC1D98097A00FD6E8D /* MessageListWidmannStyleTableViewCell.xib in Resources */,
 				30DBC4851A07E83600340B3A /* quoteButton@3x.png in Resources */,
 				3093B78A19E2F10A00F8FD5F /* boardForSale.png in Resources */,
 				3093B79019E2F1E700F8FD5F /* boardDefault.png in Resources */,
@@ -769,6 +787,7 @@
 				301FD01219AC794E0028C5C8 /* MCLThreadTableViewCell.m in Sources */,
 				305DD85719AB2A7C006514BD /* MCLThreadListTableViewController.m in Sources */,
 				30E8B89619B33C070067DD1F /* MCLReadList.m in Sources */,
+				307813C91D95AA5C00FD6E8D /* MessageListWidmannStyleViewController.swift in Sources */,
 				305DD85D19AB300F006514BD /* MCLBoard.m in Sources */,
 				301FD9A319C32FC600E36A5B /* MCLLoadingView.m in Sources */,
 				30A1BFAD19B4A8D4002439FE /* MCLSettingsTableViewController.m in Sources */,
@@ -851,6 +870,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -860,14 +880,20 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Christopher Reitz (J8XDHCNJQA)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Christopher Reitz (J8XDHCNJQA)";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -880,7 +906,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "7aaf6062-003c-4222-a704-536030a26dcd";
 				SDKROOT = iphoneos;
@@ -892,6 +918,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -901,21 +928,26 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Christopher Reitz (J8XDHCNJQA)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Christopher Reitz (J8XDHCNJQA)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				PROVISIONING_PROFILE = "7aaf6062-003c-4222-a704-536030a26dcd";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -928,14 +960,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Christopher Reitz (J8XDHCNJQA)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Christopher Reitz (J8XDHCNJQA)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mclient/mclient-Prefix.pch";
 				INFOPLIST_FILE = "mclient/mclient-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7aaf6062-003c-4222-a704-536030a26dcd";
+				SWIFT_OBJC_BRIDGING_HEADER = "mclient/mclient-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -945,14 +983,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Christopher Reitz (J8XDHCNJQA)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Christopher Reitz (J8XDHCNJQA)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mclient/mclient-Prefix.pch";
 				INFOPLIST_FILE = "mclient/mclient-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "7aaf6062-003c-4222-a704-536030a26dcd";
+				SWIFT_OBJC_BRIDGING_HEADER = "mclient/mclient-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -960,6 +1003,7 @@
 		305DD85019A63517006514BD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mclient.app/mclient";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -973,6 +1017,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "mclientTests/mclientTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -982,6 +1027,7 @@
 		305DD85119A63517006514BD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/mclient.app/mclient";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -991,6 +1037,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mclient/mclient-Prefix.pch";
 				INFOPLIST_FILE = "mclientTests/mclientTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "re.reitz.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
