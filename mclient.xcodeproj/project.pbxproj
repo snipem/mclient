@@ -648,7 +648,7 @@
 				ORGANIZATIONNAME = "Christopher Reitz";
 				TargetAttributes = {
 					305DD81319A63517006514BD = {
-						DevelopmentTeam = J8XDHCNJQA;
+						DevelopmentTeam = 4WXUDN47PU;
 						ProvisioningStyle = Automatic;
 					};
 					305DD83A19A63517006514BD = {
@@ -994,7 +994,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Christopher Reitz (J8XDHCNJQA)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = J8XDHCNJQA;
+				DEVELOPMENT_TEAM = 4WXUDN47PU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mclient/Supporting Files/mclient-Prefix.pch";
 				INFOPLIST_FILE = "mclient/Supporting Files/mclient-Info.plist";
@@ -1014,7 +1014,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Christopher Reitz (J8XDHCNJQA)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = J8XDHCNJQA;
+				DEVELOPMENT_TEAM = 4WXUDN47PU;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "mclient/Supporting Files/mclient-Prefix.pch";
 				INFOPLIST_FILE = "mclient/Supporting Files/mclient-Info.plist";
