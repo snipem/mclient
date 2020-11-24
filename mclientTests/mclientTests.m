@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Christopher Reitz. All rights reserved.
 //
 
-#import <XCTest/XCTest.h>
+@import XCTest;
 
 @interface mclientTests : XCTestCase
 
@@ -28,7 +28,7 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertTrue(YES, @"Write tests");
 }
 
 @end

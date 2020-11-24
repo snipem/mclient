@@ -2,30 +2,14 @@
 //  constants.h
 //  mclient
 //
-//  Created by Christopher Reitz on 21.08.14.
-//  Copyright (c) 2014 Christopher Reitz. All rights reserved.
+//  Copyright © 2014 - 2019 Christopher Reitz. Licensed under the MIT license.
+//  See LICENSE file in the project root for full license information.
 //
 
-//#define kMServiceBaseURL @"http://192.168.178.33:8080/mservice"
-#define kMServiceBaseURL @"https://reitz.re:8080/mservice"
-
-#define kManiacForumURL @"http://www.maniac-forum.de/forum/pxmboard.php"
-
-#define kSettingsSignatureTextDefault NSLocalizedString(@"sent from M!client for iOS", nil)
-
-typedef NS_ENUM(NSUInteger, kMCLSettingsThreadView) {
-    kMCLSettingsThreadViewWidmann,
-    kMCLSettingsThreadViewFrame
-};
-
-typedef NS_ENUM(NSUInteger, kMCLSettingsShowImages) {
-    kMCLSettingsShowImagesAlways,
-    kMCLSettingsShowImagesWifi,
-    kMCLSettingsShowImagesNever
-};
-
-typedef NS_ENUM(NSUInteger, kMCLComposeType) {
-    kMCLComposeTypeThread,
-    kMCLComposeTypeReply,
-    kMCLComposeTypeEdit
-};
+//#define kMServiceBaseURL @"http://192.168.178.36:8080"
+#define kMServiceBaseURL @"https://nerds.berlin/mservice/"
+//#define kMServiceBaseURL @"http://192.168.178.30:8080"
+#define kManiacForumURL @"https://www.maniac-forum.de/"
+#define kAppStoreUrl @"https://itunes.apple.com/de/app/m-client/id939557993?mt=8"
+#define kSettingsDefaultFontSize 3
+#define kSettingsSignatureTextDefault @"gesendet mit m!client für iOS"
